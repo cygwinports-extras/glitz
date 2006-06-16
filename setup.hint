@@ -1,0 +1,6 @@
+category: Graphics Libs
+requires: cygwin
+sdesc: "OpenGL image compositing library (development files, readmes)"
+ldesc: "Glitz is an OpenGL image compositing library. Glitz provides
+Porter/Duff compositing of images and implicit mask generation for
+geometric primitives including trapezoids, triangles, and rectangles."
