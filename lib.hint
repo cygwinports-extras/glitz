@@ -1,7 +1,7 @@
-category: Graphics Libs
-requires: cygwin
+category: Libs X11
+requires: cygwin libGL1
 external-source: glitz
-sdesc: "OpenGL image compositing library (runtime library)"
+sdesc: "OpenGL image compositing library (runtime libraries)"
 ldesc: "Glitz is an OpenGL image compositing library. Glitz provides
 Porter/Duff compositing of images and implicit mask generation for
 geometric primitives including trapezoids, triangles, and rectangles."

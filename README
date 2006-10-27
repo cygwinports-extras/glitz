@@ -5,20 +5,20 @@ Porter/Duff compositing of images and implicit mask generation for
 geometric primitives including trapezoids, triangles, and rectangles.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  libGL1-6.4.2-1
+  cygwin-1.5.21-2
+  libGL1-6.5-1
 
 Build requirements:
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
+  binutils-20060817-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.20-2
-  make-3.80-1
-  sed-4.1.4-1
-  xorg-x11-devel-6.8.2.0-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  mesa-devel-6.5-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://cairographics.org/
@@ -33,18 +33,32 @@ Build instructions:
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./glitz-0.4.4-X.sh all
+  cygport ./glitz-0.4.4-X.cygport all
 
 This will create:
-  /usr/src/glitz-0.4.4-X-src.tar.bz2
-  /usr/src/glitz-0.4.4-X.tar.bz2
-  /usr/src/libglitz1-0.4.4-X.tar.bz2
-  /usr/src/libglitz-glx1-0.4.4-X.tar.bz2
+  /usr/src/glitz-0.5.6-X-src.tar.bz2
+  /usr/src/glitz-0.5.6-X.tar.bz2
+  /usr/src/libglitz1-0.5.6-X.tar.bz2
+  /usr/src/libglitz-devel-0.5.6-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+  /usr/share/doc/Cygwin/glitz-0.5.6.README
+  /usr/share/doc/glitz-0.5.6/AUTHORS
+  /usr/share/doc/glitz-0.5.6/ChangeLog
+  /usr/share/doc/glitz-0.5.6/COPYING
+  /usr/share/doc/glitz-0.5.6/INSTALL
+  /usr/share/doc/glitz-0.5.6/NEWS
+  /usr/share/doc/glitz-0.5.6/README
+  /usr/share/doc/glitz-0.5.6/TODO
+
+(libglitz1)
+  /usr/bin/cygglitz-1.dll
+  /usr/bin/cygglitz-glx-1.dll
+
+(libglitz-devel)
   /usr/include/glitz-glx.h
   /usr/include/glitz.h
   /usr/lib/libglitz-glx.a
@@ -55,26 +69,13 @@ Files included in the binary package:
   /usr/lib/libglitz.la
   /usr/lib/pkgconfig/glitz-glx.pc
   /usr/lib/pkgconfig/glitz.pc
-  /usr/share/doc/Cygwin/glitz-0.4.4.README
-  /usr/share/doc/glitz-0.4.4/AUTHORS
-  /usr/share/doc/glitz-0.4.4/ChangeLog
-  /usr/share/doc/glitz-0.4.4/COPYING
-  /usr/share/doc/glitz-0.4.4/INSTALL
-  /usr/share/doc/glitz-0.4.4/NEWS
-  /usr/share/doc/glitz-0.4.4/README
-  /usr/share/doc/glitz-0.4.4/TODO
-
-Files included in the libglitz1 package:
-
-  /usr/bin/cygglitz-1.dll
-
-Files included in the libglitz-glx1 package:
-
-  /usr/bin/cygglitz-glx-1.dll
 
 ------------------
 
 Port Notes:
+
+----- version 0.5.6-1 -----
+Version bump.
 
 ----- version 0.4.4-3 -----
 Reverting because cairo-1.0.4 will not compile against 0.5.3.
