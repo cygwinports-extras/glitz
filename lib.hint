@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libgcc1 libGL1
+requires: libgcc1 libGL1
 external-source: glitz
 sdesc: "OpenGL image compositing library (runtime libraries)"
 ldesc: "Glitz is an OpenGL image compositing library. Glitz provides
